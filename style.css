@@ -1,0 +1,272 @@
+/* home page */
+body{
+    background-color: rgb(8, 8, 8);
+    box-sizing: border-box;
+    margin: 0 ;
+}
+
+.header{
+    width: 100%;
+    height: 80vh;
+}
+.header img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.navbar, .navAbout{
+    background-color: brown;
+    height: 25px;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto;
+    color: white;
+}
+
+li a{
+    font-style: italic;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.navAbout{
+    margin-bottom: 2rem;
+}
+
+.section{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    background-color: rgb(8, 8, 8);
+}
+.content{
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    gap: 10rem;
+}
+
+.content img{
+    height: 400px;
+    width: 50%;
+}
+.imgTop{
+    display: none;
+}
+.text{
+    width: 50%;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: brown;
+}
+footer a{
+    font-style: italic;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 900px){
+    .header, .header img{
+        height: 40vh;
+    }
+    
+    .section{
+        padding: 0;
+    }
+    .content{
+        flex-direction: column;
+        margin-bottom: 1rem;
+        gap: 0;
+    }
+    .content img ,.text{
+        width: 90%;
+    }
+    .imgTop{
+        display: block;
+    }
+    .imgBot{
+        display: none;
+    }
+}
+
+
+
+/* about page */
+.about{
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    color: aliceblue;
+}
+
+.about img{
+    width: 50%;
+    height: 600px;
+    border-right: 3px solid brown;
+    border-top: 3px solid brown;
+}
+
+.about h1{
+    padding-bottom: 1rem ;
+    border-bottom: 3px solid brown;
+}
+
+.about p{
+    font-style: italic;
+    font-size: 18px;
+}
+
+@media (max-width: 900px){
+    .about{
+        flex-direction: column;
+        gap: 2rem;
+        margin: 3rem;
+    }
+    .about img{
+        width: 100%;
+        height: 300px;
+        border: none;
+    }
+}
+
+
+
+/* contact page */
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aliceblue;
+    margin: 3rem;
+}
+
+.cot{
+    display: flex;
+    flex-direction: column;
+}
+.cot label{
+    margin: 10px;
+    font-style: italic;
+    font-size: 18px;
+}
+.cot input{
+    height: 30px;
+    width: 500px;
+    padding: 10px;
+    color: black;
+    margin-bottom: 2rem;
+    border-radius: 30px;
+    font-size: 16px;
+}
+
+.cot .message{
+    height: 200px;
+}
+.del2{
+    text-align: center;
+}
+
+svg{
+    width: 50px;
+    height: 50px;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+@media (max-width: 900px){
+    .contact{
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .icons{
+        display: flex;
+    }
+
+    .icon{
+        flex-direction: column;
+        margin: 3rem;
+    }
+}
+
+
+
+
+
+.actors{
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.actor {
+    width: 250px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgb(142, 142, 143);
+    padding: 20px 0;
+    background-color: #f2d6d6fd;
+    border-radius: 30px;
+    text-align: center;
+    margin: 2rem;
+  }
+  
+  .actor img{
+  width: 78%;
+  height: 200px;
+  border-radius: 20px;
+  
+  }
+  
+  
+  .actor-btn {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: brown;
+    background-color: black;
+    text-align: center;
+    width: 70%;
+    cursor: pointer;
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  
+  .actor-btn:hover {
+    background-color: gray;
+    transform: scale(0.9);
+  }
+  
+  
+
+ 
+  
